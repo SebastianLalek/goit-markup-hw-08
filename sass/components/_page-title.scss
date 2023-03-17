@@ -1,0 +1,26 @@
+.page-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 600px;
+  background-color: $bg-color;
+  background-image: linear-gradient(to top, $bg-gradient, $bg-gradient),
+    url(../images/bgimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: $alt-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}

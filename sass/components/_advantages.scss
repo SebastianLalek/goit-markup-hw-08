@@ -1,0 +1,21 @@
+.advantages {
+  font-size: 14px;
+
+  &__icon {
+    box-sizing: content-box;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: $button-color;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.14;
+  }
+
+  &__description {
+    line-height: 1.71;
+    color: $default-color;
+  }
+}

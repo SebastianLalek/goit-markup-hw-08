@@ -1,0 +1,48 @@
+.button {
+  padding: 6px 22px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  background-color: $button-color;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $alt-color;
+    background-color: $brand-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &--blue {
+    height: 50px;
+    width: 200px;
+    color: $alt-color;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    background-color: $brand-color;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: $alt-color;
+  }
+}
+
+.footer__button {
+  position: relative;
+  margin-left: 12px;
+  padding-left: 42px;
+  text-align: left;
+}
+
+.modal__button {
+  display: block;
+  margin: 30px auto 40px;
+}

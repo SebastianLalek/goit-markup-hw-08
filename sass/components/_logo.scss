@@ -1,0 +1,18 @@
+.logo {
+  flex-grow: 1;
+  font-family: $brand-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $brand-color;
+
+  &--dark {
+    color: $logo-color;
+  }
+
+  &--light {
+    color: $alt-color;
+  }
+}
