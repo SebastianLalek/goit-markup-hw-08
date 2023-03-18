@@ -12,7 +12,8 @@
 
   &__image {
     display: block;
-    width: 450px;
+    width: calc(100vw - 30px);
+    max-width: 450px;
     height: 294px;
     object-fit: cover;
   }
