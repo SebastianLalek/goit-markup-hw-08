@@ -1,5 +1,5 @@
 .clients {
-  width: 170px;
+  width: 210px;
   height: 92px;
   padding: 16px 32px;
   fill: $icon-color;
@@ -12,5 +12,17 @@
     fill: $brand-color;
     border-color: $brand-color;
     cursor: pointer;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .clients {
+    width: 226px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .clients {
+    width: 170px;
   }
 }

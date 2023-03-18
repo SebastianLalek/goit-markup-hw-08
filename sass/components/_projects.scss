@@ -12,7 +12,7 @@
 
   &__image {
     display: block;
-    width: 370px;
+    width: 450px;
     height: 294px;
     object-fit: cover;
   }
@@ -56,5 +56,17 @@
 
   &:hover &__overlay {
     transform: translateY(-408px);
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .project-card__image {
+    width: 354px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .project-card__image {
+    width: 370px;
   }
 }

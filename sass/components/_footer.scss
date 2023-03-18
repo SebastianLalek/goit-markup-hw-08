@@ -4,10 +4,10 @@
   line-height: 1.71;
   background-color: $bg-color;
 
-  &__items {
-    display: flex;
-    padding-top: 60px;
-    align-items: baseline;
+  &__content {
+    display: block;
+    padding: 60px 0 60px;
+    text-align: center;
     gap: 70px;
   }
 
@@ -17,11 +17,14 @@
     font-weight: 700;
     font-size: 14px;
   }
+
+  &__item:not(:last-child) {
+    padding-bottom: 60px;
+  }
 }
 
 .address {
   padding-top: 20px;
-  padding-bottom: 60px;
   font-style: normal;
   letter-spacing: 0.03em;
 
@@ -40,13 +43,38 @@
 }
 
 .newsletter {
-  display: inline-block;
-  width: 358px;
+  display: block;
+  width: 450px;
   height: 50px;
+  margin: 0 auto 20px;
   padding: 15px 16px;
   font-size: 16px;
   color: $contact-color;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer__item {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .footer__content {
+    display: flex;
+    text-align: left;
+  }
+
+  .newsletter {
+    display: inline-block;
+    width: 358px;
+  }
 }

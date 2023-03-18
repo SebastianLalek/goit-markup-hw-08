@@ -2,7 +2,8 @@
   font-size: 14px;
 
   &__icon {
-    box-sizing: content-box;
+    height: 120px;
+    width: 450px;
     margin-bottom: 30px;
     padding: 25px 100px;
     background-color: $button-color;
@@ -17,5 +18,17 @@
   &__description {
     line-height: 1.71;
     color: $default-color;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .advantages__icon {
+    width: 354px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .advantages__icon {
+    width: 270px;
   }
 }

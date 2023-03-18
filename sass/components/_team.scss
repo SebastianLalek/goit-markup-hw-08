@@ -8,7 +8,7 @@
 
   &__picture {
     display: block;
-    max-width: 270px;
+    max-width: 450px;
   }
 
   &__caption {
@@ -24,5 +24,17 @@
 
   &__title {
     color: $default-color;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .team-card__picture {
+    max-width: 354px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .team-card__picture {
+    max-width: 270px;
   }
 }
