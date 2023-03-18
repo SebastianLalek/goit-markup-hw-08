@@ -12,6 +12,9 @@
 
   &__image {
     display: block;
+    width: 370px;
+    height: 294px;
+    object-fit: cover;
   }
   &__caption {
     position: relative;
