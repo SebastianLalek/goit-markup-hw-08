@@ -62,7 +62,12 @@
               >
             </li>
           </ul>
-          <button class="menu" type="button">
+          <button
+            class="menu menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
             <svg width="24" height="16" class="menu__icon">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -345,6 +350,54 @@
         </ul>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">&#10006;</button>
+      <nav class="mobile-nav">
+        <ul>
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link">Agencja</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./potrfolio.html" class="mobile-nav__link">Portfolio</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#" class="mobile-nav__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__tel" href="tel:+48111111111">
+            +48 111 111 111</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link mobile-socials__link--line" href="#"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link mobile-socials__link--line" href="#"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link mobile-socials__link--line" href="#"
+            >Fecebook</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">Linkedin</a>
+        </li>
+      </ul>
+    </div>
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

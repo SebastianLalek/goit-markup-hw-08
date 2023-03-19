@@ -22,8 +22,8 @@
   transform: translate(-50%, -50%);
   display: flex;
   margin: auto;
-  height: 581px;
-  width: 528px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
   background-color: $alt-color;
   border-radius: 4px;
 
@@ -39,6 +39,11 @@
     border-radius: 50%;
     border: 1px solid $backdrop-color;
     cursor: pointer;
+
+    &:hover,
+    &:active {
+      color: $brand-color;
+    }
   }
 }
 
@@ -70,7 +75,7 @@
     line-height: 14.06px;
     letter-spacing: 0.01em;
     padding-bottom: 4px;
-    color: var(--p-color);
+    color: $default-color;
   }
 
   &__area {
@@ -154,5 +159,11 @@
       -webkit-appearance: none;
       appearance: none;
     }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .modal {
+    max-width: 528px;
   }
 }
